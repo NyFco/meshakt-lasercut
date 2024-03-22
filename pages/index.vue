@@ -1,3 +1,3 @@
 <template>
-  <P>GOODBYE</P>
+  <!-- TODO: Sections will be here -->
 </template>
