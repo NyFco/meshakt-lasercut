@@ -6,10 +6,10 @@
     >
       <div class="flex lg:flex-1">
         <a 
-          :href="`tel:${t('phone.code') + t('phone.no')}`"
+          :href="`tel:${t('sections.footer.connect_us.options.phone.code') + t('sections.footer.connect_us.options.phone.no')}`"
           class="text-white text-md flex items-center align-middle gap-2">
           <PhoneIcon class="h-5 w-5 mb-1" /> 
-          <span>{{ t('phone.code') + " - " + t('phone.no') }}</span>
+          <span>{{ t('sections.footer.connect_us.options.phone.code') + " - " + t('sections.footer.connect_us.options.phone.no') }}</span>
         </a>
       </div>
       <div class="flex lg:hidden">

@@ -1,9 +1,7 @@
 import menu from "./menu";
+import sections from "./sections";
 
 export default {
-  phone: {
-    code: "+98",
-    no: "9159148863",
-  },
   menu,
+  sections,
 };
