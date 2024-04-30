@@ -22,7 +22,7 @@
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-8">
+      <div class="hidden lg:flex flex-row-reverse lg:flex-1 lg:gap-8">
         <a 
           v-for="item in headerMenuItems" 
           :href="item.linkTo" 
