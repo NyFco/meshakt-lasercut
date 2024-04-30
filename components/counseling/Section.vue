@@ -23,7 +23,7 @@
         />
       </div>
       <div class="flex justify-center items-center">
-        <LibButton type="primary">{{
+        <LibButton type="primary" @click="submit">{{
           t("sections.counseling.join")
         }}</LibButton>
       </div>
@@ -32,11 +32,48 @@
 </template>
 
 <script setup>
+// Axios
+import axios from "axios";
+
 // Services
 import { t } from "~/services/Language.service";
 
+// BaseURL
+const base_url = import.meta.env.VITE_API_BASE_URL;
+
+// Toastify
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
+
+const toastifyConfig = {
+  autoClose: 3000,
+  rtl: true,
+  position: "bottom-right",
+};
+
 const name = ref("");
 const phone = ref("");
+
+function submit() {
+  if (phone.value) {
+    axios
+      .post(base_url, {
+        name: name.value,
+        phone: phone.value,
+      })
+      .then(({ data }) => {
+        if (data.code === 200) {
+          toast.success(data.message, toastifyConfig);
+          name.value = "";
+          phone.value = "";
+        } else {
+          toast.error(data.message, toastifyConfig);
+        }
+      });
+  } else {
+    toast.error(t("sections.counseling.phone_number_error"), toastifyConfig);
+  }
+}
 </script>
 
 <style scoped lang="scss">

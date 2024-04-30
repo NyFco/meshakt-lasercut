@@ -1,5 +1,5 @@
 <template>
-  <button :class="`${type} btn`">
+  <button :class="`${type} btn`" @click="click">
     <slot />
   </button>
 </template>
@@ -11,6 +11,12 @@ const props = defineProps({
     default: "default", // primary
   },
 });
+
+const emit = defineEmits(['click']);
+
+function click(event) {
+  emit('click', event);
+}
 </script>
 
 <style scoped lang="scss">
