@@ -19,6 +19,9 @@ export default {
     join: 'عضویت در خبرنامه',
     phone_number_error: 'لطفا شماره تلفن خود را وارد نمایید.'
   },
+  gallery: {
+    title: 'گالری لیزر مشکوة'
+  },
   footer: {
     connect_us: {
       title: "راه های ارتباطی",

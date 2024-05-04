@@ -85,6 +85,10 @@ const headerMenuItems = [
     linkTo: "#about_us",
   },
   {
+    title: t('menu.gallery'),
+    linkTo: "#gallery",
+  },
+  {
     title: t('menu.services'),
     linkTo: "#services",
   },

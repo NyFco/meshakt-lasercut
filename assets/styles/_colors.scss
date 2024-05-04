@@ -1,3 +1,9 @@
 $primary: #194a77;
 $btn-hover: #4382bd;
 // $secondary: #E4A79D;
+
+:root {
+  --swiper-theme-color: $primary;
+  --swiper-navigation-color: #ffffff;
+  --swiper-pagination-color: #ffffff;
+}

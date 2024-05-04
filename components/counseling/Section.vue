@@ -1,5 +1,5 @@
 <template>
-  <section class="flex justify-center items-center pb-12 px-6">
+  <section class="flex justify-center items-center pb-12 px-6" id="counseling">
     <div class="p-6 lg:px-60 rounded-md shadow-[0_0_5px_0_rgba(0,0,0,0.3)]">
       <h1
         id="counseling-section-title"
