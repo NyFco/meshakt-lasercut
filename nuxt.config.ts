@@ -1,7 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  css: ['~/assets/styles/main.scss'],
+  devtools: { enabled: false },
+  ssr: true,
+  css: ["~/assets/styles/main.scss"],
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -13,8 +20,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: '@use "~/assets/styles/_colors.scss" as *;',
-        }
-      }
-    }
-  }
-})
+        },
+      },
+    },
+  },
+});
