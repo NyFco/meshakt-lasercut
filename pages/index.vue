@@ -5,6 +5,7 @@
     :text="t('sections.about_us.text')"
     id="about_us"
   />
+  <GallerySection />
   <LibSection
     :image="section2Img"
     :title="t('sections.services.title')"

@@ -17,7 +17,12 @@ export default {
     name: 'نام',
     phone_number: 'شماره تماس',
     join: 'عضویت در خبرنامه',
-    phone_number_error: 'لطفا شماره تلفن خود را وارد نمایید.'
+    phone_number_error: 'لطفا شماره تلفن خود را وارد نمایید.',
+    submit_error: 'خطا در ثبت اطلاعات',
+    invalid_phone_number: "شماره تلفن باید با ۰۹ شروع شده و ۱۱ رقم باشد."
+  },
+  gallery: {
+    title: 'گالری لیزر مشکوة'
   },
   footer: {
     connect_us: {
