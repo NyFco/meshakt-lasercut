@@ -5,7 +5,7 @@
     >
       <div class="divide-y divide-white w-full sm:max-w-96">
         <h4 class="mb-1">{{ t("sections.footer.about_us.title") }}</h4>
-        <p class="pt-5 pl-2">{{ t("sections.footer.about_us.value") }}</p>
+        <p class="pt-5 pl-2">{{ t("sections.footer.about_us.text") }}</p>
       </div>
       <div class="divide-y divide-white w-full sm:max-w-96">
         <h4 class="mb-1">{{ t("sections.footer.connect_us.title") }}</h4>
@@ -49,23 +49,23 @@ const connectionOptions = [
       t("sections.footer.connect_us.options.phone.no")
     }`,
   },
-  {
-    title: t("sections.footer.connect_us.options.email.title"),
-    value: t("sections.footer.connect_us.options.email.email"),
-    linkTo: `mailto:${t("sections.footer.connect_us.options.email.email")}`,
-  },
-  {
-    title: t("sections.footer.connect_us.options.instagram.title"),
-    value: t("sections.footer.connect_us.options.instagram.id"),
-    linkTo: `https://www.instagram.com/${t(
-      "sections.footer.connect_us.options.instagram.id"
-    )}`,
-  },
-  {
-    title: t("sections.footer.connect_us.options.address.title"),
-    value: t("sections.footer.connect_us.options.address.address"),
-    linkTo: null,
-  },
+  // {
+  //   title: t("sections.footer.connect_us.options.email.title"),
+  //   value: t("sections.footer.connect_us.options.email.email"),
+  //   linkTo: `mailto:${t("sections.footer.connect_us.options.email.email")}`,
+  // },
+  // {
+  //   title: t("sections.footer.connect_us.options.instagram.title"),
+  //   value: t("sections.footer.connect_us.options.instagram.id"),
+  //   linkTo: `https://www.instagram.com/${t(
+  //     "sections.footer.connect_us.options.instagram.id"
+  //   )}`,
+  // },
+  // {
+  //   title: t("sections.footer.connect_us.options.address.title"),
+  //   value: t("sections.footer.connect_us.options.address.address"),
+  //   linkTo: null,
+  // },
 ];
 </script>
 
